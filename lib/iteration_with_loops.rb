@@ -6,7 +6,7 @@ def find_even_values(src)
   while count < array_of_arrays.length do
     inner_count = 0
     while count_2 < array_of_arrays[count].length do
-      if array_of_arrays[count][inner_count].even
+      if array_of_arrays[count][inner_count]%2 == 0
         array_of_arrays[count][inner_count]
       end
       inner_count += 1
